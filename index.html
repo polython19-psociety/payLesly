@@ -1,51 +1,20 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Register service worker if supported. -->
-  <!--
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js');
-    }
-  </script>
-  -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-  <!-- Load polyfills -->
-  <script
-    src="node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"
-    defer>
-  </script>
+    <title>pay-lesly</title>
+    <meta name="description" content="pay-lesly description">
 
-  <!-- Load components via WebComponents.waitFor -->
-  <script type="module" src="/src/pay-lesly-app.js"></script>
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
 
-  <!-- Change stuff here for your app -->
-  <meta name="description" content="pay-lesly-app">
-  <meta name="theme-color" content="#ffffff">
-  <title>PayLeslyApp</title>
+    <script src="/bower_components/webcomponentsjs/webcomponents-loader.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="manifest" href="./manifest.json">
-  <link rel="shortcut icon" href="/manifest/favicon.ico">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta charset="UTF-8">
-</head>
-<body>
-
-  <!--
-    To configure starting state of the checkbox from markup:
-    <pay-lesly-app pie="true">
-  -->
-
-  <pay-lesly-app>
-    <!-- Check for JavaScript -->
-    <p id="jsyes"></p>
-    <script type="text/javascript">
-      document.getElementById('jsyes').innerHTML='Loading...';
-    </script>
-    <noscript>
-      Could not render the custom element. Check that JavaScript is enabled.
-    </noscript>
-  </pay-lesly-app>
-</body>
+    <link rel="import" href="/src/pay-lesly-app/pay-lesly-app.html">
+  </head>
+  <body>
+    <pay-lesly-app></pay-lesly-app>
+  </body>
+</html>
