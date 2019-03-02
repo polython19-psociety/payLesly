@@ -1,0 +1,6 @@
+{
+  "name": "pay-lesly",
+  "short_name": "pay-lesly",
+  "start_url": "/",
+  "display": "standalone"
+}
