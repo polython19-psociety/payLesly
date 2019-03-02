@@ -1,0 +1,16 @@
+{
+  "name": "pay-lesly-app",
+  "version": "1.0.0",
+  "description": "pay-lesly-app",
+  "repository": "",
+  "main": "pay-lesly-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "The Polymer Authors",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@webcomponents/webcomponentsjs": "latest",
+    "lit-element": "^2.0.1"
+  }
+}
