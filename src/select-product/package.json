@@ -1,0 +1,25 @@
+{
+  "name": "@catsys/select-product",
+  "version": "1.0.0",
+  "description": "Catsys component generated",
+  "main": "select-product.js",
+  "keywords": [
+    "lit-element",
+    "component"
+  ],
+  "author": "autogenered <hello@catsys.com>",
+  "license": "MIT",
+  "scripts": {
+    "karma": "karma",
+    "test": "karma start"
+  },
+  "dependencies": {
+    "@polymer/iron-icons": "^3.0.1",
+    "@polymer/iron-list": "^3.0.2",
+    "lit-element": "^2.0.0"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^0.9.11",
+    "@open-wc/testing-karma": "^0.4.7"
+  }
+}
