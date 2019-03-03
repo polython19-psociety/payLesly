@@ -23,8 +23,7 @@ export class PayLeslyApp extends LitElement {
         card-btn {
             max-width: 25%;
             margin: 30px 15px;
-            height: 500px;
-        }      
+        }  
       `;
   }
 
@@ -58,7 +57,7 @@ export class PayLeslyApp extends LitElement {
         '>
         
             <card-grid>
-                <card-btn title="Compara" image='../img/search.jpg' description="Consulta entre las principales cadenas de supermercados los precios de tus productos favoritos y consigue el mejor presupuesto para tu despensa!" link="components/compara">
+                <card-btn title="Compara" image='../img/search.jpg' description="Consulta entre las principales cadenas de supermercados los precios de tus productos favoritos y consigue el mejor presupuesto para tu despensa!" link="components/compara-page">
                 </card-btn>
                 
                 <card-btn title="Registra" image='../img/registra.jpg' description="Como comerciante hazte visible en el mercado minorista ofreciendo los mejores precios a más consumidores" link="components/registra">
