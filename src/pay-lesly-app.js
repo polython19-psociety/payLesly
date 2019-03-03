@@ -1,11 +1,8 @@
 // jshint esversion:6
-
+import { LitElement, html } from 'lit-element';
 import './nav-bar/nav-bar.js';
 import './card-btn/card-btn.js';
 import './card-grid/card-grid.js';
-
-import { LitElement, html, css } from 'lit-element';
-
 
 export class PayLeslyApp extends LitElement {
   /**
