@@ -1,0 +1,11 @@
+import { css } from 'lit-element';
+
+export default css`
+:host {
+  max-width: 100%;
+  display: inline-block;
+  box-sizing: border-box; }
+
+:host([hidden]), [hidden] {
+  display: none !important; }
+`;

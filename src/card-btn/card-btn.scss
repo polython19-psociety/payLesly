@@ -1,0 +1,12 @@
+:host {
+    max-width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+:host([hidden]), [hidden] {
+  display: none !important;
+}
+
+
+
