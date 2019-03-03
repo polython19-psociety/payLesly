@@ -1,8 +1,8 @@
 // jshint esversion:6
 import { LitElement, html } from 'lit-element';
 import './nav-bar/nav-bar.js';
-
-
+import './card-btn/card-btn.js';
+import './card-grid/card-grid.js';
 
 export class PayLeslyApp extends LitElement {
   /**
@@ -13,6 +13,15 @@ export class PayLeslyApp extends LitElement {
     return {
       message: { type: String }
     };
+  }
+
+  static get styles() {
+      return css`
+        card-btn {
+            max-width: 25%;
+            margin: 30px 15px;
+        }  
+      `;
   }
 
   constructor() {
@@ -43,7 +52,19 @@ export class PayLeslyApp extends LitElement {
             "name": "Conócenos"
         }]
         '>
-      </nav-bar>
+        
+            <card-grid>
+                <card-btn title="Compara" image='../img/search.jpg' description="Consulta entre las principales cadenas de supermercados los precios de tus productos favoritos y consigue el mejor presupuesto para tu despensa!" link="components/compara-page">
+                </card-btn>
+                
+                <card-btn title="Registra" image='../img/registra.jpg' description="Como comerciante hazte visible en el mercado minorista ofreciendo los mejores precios a más consumidores" link="components/registra">
+                </card-btn>
+                
+                <card-btn title="Consigue" image='../img/compra.jpg' description="¿Ya tienes tu lista de despensa lista? ¡Consíguela ya mismo y recógela en tienda o recíbela en la puerta de tu hogar!" link="components/compra">
+                </card-btn>              
+            </card-grid>
+      
+    </nav-bar>
       
     `;
   }
