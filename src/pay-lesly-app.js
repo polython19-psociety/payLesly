@@ -1,8 +1,7 @@
 // jshint esversion:6
-
+import { LitElement, html } from 'lit-element';
 import './nav-bar/nav-bar.js';
 
-import { LitElement, html } from 'lit-element';
 
 
 export class PayLeslyApp extends LitElement {

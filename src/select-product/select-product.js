@@ -30,10 +30,19 @@ class SelectProduct extends LitElement {
     <div class="card-container">
         ${this.items.map((item, index) =>
           html`
+          
           <div class="card-item">
-          <iron-icon icon="icons:delete"></iron-icon>
+          <div>
+            <p>
             name: ${item.product}
+            </p>
+            <p>
             price: ${item.price}
+            </p>
+          </div>
+            <button class="deleted-btn">
+              <iron-icon icon="icons:delete"></iron-icon>
+            </button>
           </div>
           `)}
     </div>
