@@ -13,7 +13,7 @@ export class PayLeslyApp extends LitElement {
 
   constructor() {
     super();
-    this.message = 'hola'
+    this.message = 'holas'
   }
 
   render() {
