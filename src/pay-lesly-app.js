@@ -1,4 +1,9 @@
+// jshint esversion:6
+
+import './nav-bar/nav-bar.js';
+
 import { LitElement, html } from 'lit-element';
+
 
 export class PayLeslyApp extends LitElement {
   /**
@@ -13,12 +18,34 @@ export class PayLeslyApp extends LitElement {
 
   constructor() {
     super();
-    this.message = 'holas'
+    this.message = 'holas';
   }
 
   render() {
     return html`
-      <h1>${this.message}</h1>
+      <nav-bar mainTitle="Paylesly" condensedTitle="Tu mejor opcion" menuItems='[{
+            "icon": "search",
+            "name": "Compara"
+        },
+        {
+            "icon": "create",
+            "name": "Registra"
+        },
+        {
+            "icon": "shopping-cart",
+            "name": "Compra"
+        },
+        {
+            "icon": "mail",
+            "name": "Contáctanos"
+        },
+        {
+            "icon": "info",
+            "name": "Conócenos"
+        }]
+        '>
+      </nav-bar>
+      
     `;
   }
 }
